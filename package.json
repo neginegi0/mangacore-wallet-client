@@ -1,35 +1,34 @@
 {
-  "name": "bitcore-wallet-client",
-  "description": "Client for bitcore-wallet-service",
+  "name": "mangacore-wallet-client",
+  "description": "Client for mangacore-wallet-service",
   "author": "BitPay Inc",
   "version": "6.7.5",
   "license": "MIT",
   "keywords": [
-    "bitcoin",
+    "mangacoin",
     "copay",
     "multisig",
     "wallet",
     "client",
-    "bitcore",
+    "mangacore",
     "BWS",
     "BWC"
   ],
   "engine": "node >= 8.0.0",
   "main": "index.js",
   "repository": {
-    "url": "git@github.com:bitpay/bitcore-wallet-client.git",
+    "url": "git@github.com:bitpay/mangacore-wallet-client.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/bitcore-wallet-client/issues"
+    "url": "https://github.com/bitpay/mangacore-wallet-client/issues"
   },
   "dependencies": {
     "async": "^0.9.0",
     "bip38": "^1.3.0",
-    "bitcore-lib": "^0.15.0",
-    "bitcore-lib-cash": "^0.16.1",
-    "bitcore-mnemonic": "^1.3.0",
-    "bitcore-payment-protocol": "^1.7.0",
+    "mangacore-lib": "https://github.com/neginegi0/mangacore-lib/archive/segwit.tar.gz",
+    "mangacore-mnemonic": "https://github.com/neginegi0/mangacore-mnemonic/archive/master.tar.gz",
+    "mangacore-payment-protocol": "https://github.com/neginegi0/mangacore-payment-protocol/archive/master.tar.gz",
     "json-stable-stringify": "^1.0.0",
     "lodash": "^4.17.4",
     "preconditions": "^1.0.8",
@@ -37,7 +36,7 @@
     "superagent": "^3.4.1"
   },
   "devDependencies": {
-    "bitcore-wallet-service": "2.3.0",
+    "mangacore-wallet-service": "https://github.com/neginegi0/mangacore-wallet-service/archive/master.tar.gz",
     "browserify": "^13.1.0",
     "chai": "^1.9.1",
     "coveralls": "^2.11.2",

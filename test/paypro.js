@@ -74,7 +74,7 @@ describe('paypro', function() {
       xhr: xhr,
       env: 'browser',
     }, function(err, res) {
-      headers['Accept'].should.equal('application/bitcoin-paymentrequest');
+      headers['Accept'].should.equal('application/mangacoin-paymentrequest');
       should.not.exist(err);
       res.should.deep.equal(TestData.payProData);
       done();
@@ -89,7 +89,7 @@ describe('paypro', function() {
       xhr: xhr,
       env: 'browser',
     }, function(err, res) {
-      headers['Accept'].should.equal('application/bitcoin-paymentrequest');
+      headers['Accept'].should.equal('application/mangacoin-paymentrequest');
       should.exist(err);
       done();
     });
@@ -106,7 +106,7 @@ describe('paypro', function() {
       coin: 'bch',
     }, function(err, res) {
       should.not.exist(err);
-      headers['Accept'].should.equal('application/bitcoincash-paymentrequest');
+      headers['Accept'].should.equal('application/mangacoincash-paymentrequest');
       res.should.deep.equal(TestDataBCH);
       done();
     });
@@ -219,8 +219,8 @@ describe('paypro', function() {
       env: 'browser',
     };
     var payment = PayPro.send(opts, function(err, data) {
-      headers['Accept'].should.equal('application/bitcoin-paymentack');
-      headers['Content-Type'].should.equal('application/bitcoin-payment');
+      headers['Accept'].should.equal('application/mangacoin-paymentack');
+      headers['Content-Type'].should.equal('application/mangacoin-payment');
       should.not.exist(err);
       done();
     });
@@ -239,8 +239,8 @@ describe('paypro', function() {
       coin: 'bch',
     };
     var payment = PayPro.send(opts, function(err, data) {
-      headers['Accept'].should.equal('application/bitcoincash-paymentack');
-      headers['Content-Type'].should.equal('application/bitcoincash-payment');
+      headers['Accept'].should.equal('application/mangacoincash-paymentack');
+      headers['Content-Type'].should.equal('application/mangacoincash-payment');
       should.not.exist(err);
       done();
     });

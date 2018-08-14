@@ -1,17 +1,17 @@
 {
-  "name": "bitcore-wallet-client",
+  "name": "mangacore-wallet-client",
   "main": "index.js",
   "version": "2.1.1",
-  "homepage": "https://github.com/bitpay/bitcore-wallet-client",
+  "homepage": "https://github.com/bitpay/mangacore-wallet-client",
   "authors": ["BitPay Inc"],
-  "description": "Client for bitcore-wallet-service",
+  "description": "Client for mangacore-wallet-service",
   "keywords": [
-    "bitcoin",
+    "mangacoin",
     "copay",
     "multisig",
     "wallet",
     "client",
-    "bitcore"
+    "mangacore"
   ],
   "ignore": [
     "**/.*",
